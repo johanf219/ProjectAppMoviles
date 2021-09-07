@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="log_in">Log In</string>
+    <string name="adicionar_unidad_de_venta">Adicionar unidad de venta</string>
+    <string name="sign_in">SIGN IN</string>
+</resources>
