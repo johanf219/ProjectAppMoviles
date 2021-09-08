@@ -52,6 +52,8 @@ class CrearPuestoVentaActivity : AppCompatActivity() {
 
             if (this.saleAlreadyExists(pointName)) {
                 Toast.makeText(this, "sale already exists", Toast.LENGTH_LONG).show()
+                cleaner()
+                
                 return@setOnClickListener
             }
 
@@ -82,6 +84,14 @@ class CrearPuestoVentaActivity : AppCompatActivity() {
         }
 
         return true
+    }
+
+    private fun cleaner() {
+        viewBinding.cpvPtNombre.text.clear()
+        viewBinding.cpvPtUsername.text.clear()
+        viewBinding.cpvPsPassword.text.clear()
+        viewBinding.cpvPtCelular.text.clear()
+        viewBinding.cpvPtEmail.text.clear()
     }
 
     private fun saleAlreadyExists(name: String): Boolean {

@@ -53,6 +53,8 @@ class AdicionarUnidadActivity : AppCompatActivity() {
 
            Toast.makeText(this, "unit created successfully", Toast.LENGTH_LONG).show()
 
+           cleaner()
+
            var intent = Intent(this, MenuActivity::class.java)
            startActivity(intent)
        }
