@@ -11,4 +11,9 @@
     <string name="email">email</string>
     <string name="create">Create</string>
     <string name="sign_in">SIGN IN</string>
+    <string name="sale">sale</string>
+    <string name="special_name">special name</string>
+    <string name="tender">tender</string>
+    <string name="update">UPDATE</string>
+    <string name="actualizar_puesto_de_venta">ACTUALIZAR PUESTO DE VENTA</string>
 </resources>

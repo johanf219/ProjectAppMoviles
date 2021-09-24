@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project">
         <activity
+            android:name=".ActualizarProductoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PersonalizarPuestoActivity"
+            android:exported="true" />
+        <activity
             android:name=".SigninActivity"
             android:exported="true" />
         <activity

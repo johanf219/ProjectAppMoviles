@@ -24,5 +24,15 @@ class MenuActivity : AppCompatActivity() {
             var intent = Intent(this, AdicionarUnidadActivity::class.java)
             startActivity(intent)
         }
+
+        viewBinding.menuBtnActualizarPuesto.setOnClickListener{
+            var intent = Intent(this, PersonalizarPuestoActivity::class.java)
+            startActivity(intent)
+        }
+
+        viewBinding.menuBtnActualizarProduct.setOnClickListener{
+            var intent = Intent(this, ActualizarProductoActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
