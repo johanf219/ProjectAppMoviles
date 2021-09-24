@@ -10,44 +10,45 @@
         android:id="@+id/menu_btn_crear_puesto_venta"
         android:layout_width="@dimen/menu_btn"
         android:layout_height="wrap_content"
-        android:layout_marginTop="210dp"
+        android:layout_marginTop="100dp"
         android:text="@string/crear_puesto_de_venta"
+        app:layout_constraintBottom_toTopOf="@+id/menu_btn_actualizar_puesto"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
 
     <Button
         android:id="@+id/menu_btn_actualizar_puesto"
         android:layout_width="@dimen/menu_btn"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/actualizar_puesto_de_venta"
+        app:layout_constraintBottom_toTopOf="@+id/menu_btn_actualizar_product"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_btn_crear_puesto_venta" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/menu_btn_adicionar_unidad_venta"
         android:layout_width="@dimen/menu_btn"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="236dp"
+        android:layout_marginBottom="188dp"
         android:text="@string/adicionar_unidad_de_venta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/menu_btn_actualizar_product"
         android:layout_width="@dimen/menu_btn"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
         android:text="actualizar producto"
         app:layout_constraintBottom_toTopOf="@+id/menu_btn_adicionar_unidad_venta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_btn_actualizar_puesto"
-        app:layout_constraintVertical_bias="0.49" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

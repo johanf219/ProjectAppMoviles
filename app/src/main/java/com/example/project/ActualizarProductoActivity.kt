@@ -30,7 +30,7 @@ class ActualizarProductoActivity : AppCompatActivity() {
     private val images_path = "product"
     private val productChildName = "product"
 
-    val unitDB = Firebase.database.getReference("Unit")
+    val unitDB = Firebase.database.getReference("unit")
     var units: MutableList<String> = mutableListOf()
 
     private val productIV = 1
