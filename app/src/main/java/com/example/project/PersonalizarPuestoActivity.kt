@@ -120,7 +120,7 @@ class PersonalizarPuestoActivity : AppCompatActivity() {
 
             if (requestCode == tenderIV) {
                 mImageSelecionadaUriWorker = data?.data
-                viewBinding.ppIvTender.setImageURI(mImageSelecionadaUri)
+                viewBinding.ppIvTender.setImageURI(mImageSelecionadaUriWorker)
             }
         }
     }
@@ -161,6 +161,8 @@ class PersonalizarPuestoActivity : AppCompatActivity() {
                     Toast.makeText(this, "something goes wrong, try again", Toast.LENGTH_LONG).show()
                 }
         }
+
+        Toast.makeText(this, "something goes wrong, try again", Toast.LENGTH_LONG).show()
     }
 
     private fun saveSale(sale_id: String, special_name: String) {
