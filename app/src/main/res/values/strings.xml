@@ -16,4 +16,6 @@
     <string name="tender">tender</string>
     <string name="update">UPDATE</string>
     <string name="actualizar_puesto_de_venta">ACTUALIZAR PUESTO DE VENTA</string>
+    <string name="ver_lista_de_pedidos">VER LISTA DE PEDIDOS</string>
+    <string name="actualizar_producto">actualizar producto</string>
 </resources>

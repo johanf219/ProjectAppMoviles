@@ -9,6 +9,10 @@ class MenuActivity : AppCompatActivity() {
 
     private lateinit var viewBinding: ActivityMenuBinding
 
+    companion object{
+        const val EMAIL_KEY = "email_key"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -33,6 +37,17 @@ class MenuActivity : AppCompatActivity() {
         viewBinding.menuBtnActualizarProduct.setOnClickListener{
             var intent = Intent(this, ActualizarProductoActivity::class.java)
             startActivity(intent)
+        }
+
+        viewBinding.menuBtnVerListaPedidos.setOnClickListener{
+            var ltintent = Intent(this, ListaPedidosActivity::class.java)
+
+            val mintent : Bundle = intent.extras!!
+            val email = mintent.getString(EMAIL_KEY).toString()
+
+            ltintent.putExtra(ListaPedidosActivity.EMAIL_KEY, email)
+
+            startActivity(ltintent)
         }
     }
 }

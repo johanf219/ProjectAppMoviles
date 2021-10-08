@@ -32,7 +32,6 @@ class SigninActivity : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
             }
         })
 
@@ -49,7 +48,7 @@ class SigninActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            val user = User(viewBinding.signinPsPassword.text.toString(), defaultRole)
+            val user = User(viewBinding.signinPsPassword.text.toString(), defaultRole, "florezjohan2197@gmail.com")
 
             var query = db.child(childName).child(username)
             query.setValue(user)

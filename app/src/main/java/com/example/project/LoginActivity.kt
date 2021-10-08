@@ -3,6 +3,7 @@ package com.example.project
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import com.example.project.databinding.ActivityLoginBinding
 import com.google.firebase.database.DataSnapshot
@@ -60,6 +61,15 @@ class LoginActivity : AppCompatActivity() {
             cleaner()
 
             var intent = Intent(this, MenuActivity::class.java)
+
+            val email = query.getValue<User>()?.email.toString()
+            if (email == "") {
+                Toast.makeText(this, "missing email", Toast.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
+
+            Log.d("email:::::::::::::", email)
+            intent.putExtra(MenuActivity.EMAIL_KEY, email)
             startActivity(intent)
         }
     }
