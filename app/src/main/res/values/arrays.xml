@@ -3,8 +3,9 @@
     <string-array name="spinnerItems">
         <item>Administrador</item>
         <item>Vendedor</item>
+        <item>Cliente</item>
     </string-array>
-    <string-array name="spinnerUnits">
+    <string-array name="spinner_units">
         <item>Libra</item>
         <item>Unidad</item>
         <item>Pedazo</item>
@@ -12,4 +13,8 @@
         <item>Panel Completo</item>
         <item>Medio Panel</item>
     </string-array>
+    <string-array name="spinner_delivery">
+        <item>Domicilio</item>
+        <item>Entrega en local</item>
+    </string-array>>
 </resources>

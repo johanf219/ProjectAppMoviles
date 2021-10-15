@@ -18,4 +18,6 @@
     <string name="actualizar_puesto_de_venta">ACTUALIZAR PUESTO DE VENTA</string>
     <string name="ver_lista_de_pedidos">VER LISTA DE PEDIDOS</string>
     <string name="actualizar_producto">actualizar producto</string>
+    <string name="buy">BUY</string>
+    <string name="unit">unit</string>
 </resources>

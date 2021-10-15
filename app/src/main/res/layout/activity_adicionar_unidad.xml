@@ -13,6 +13,7 @@
         android:layout_marginStart="101dp"
         android:layout_marginTop="308dp"
         android:layout_marginEnd="101dp"
+        android:gravity="center"
         android:ems="10"
         android:hint="unidad "
         android:inputType="textPersonName"

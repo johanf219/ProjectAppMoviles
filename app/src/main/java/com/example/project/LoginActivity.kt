@@ -68,9 +68,31 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            Log.d("email:::::::::::::", email)
-            intent.putExtra(MenuActivity.EMAIL_KEY, email)
-            startActivity(intent)
+            val role = query.getValue<User>()?.role.toString()
+            if (role != "client") {
+                intent.putExtra(MenuActivity.EMAIL_KEY, email)
+                startActivity(intent)
+
+                return@setOnClickListener
+            }
+
+            val clientQuery = dbSnapShot.child("client").child(username)
+            if (!query.exists()) {
+                Toast.makeText(this, "client does not exists", Toast.LENGTH_LONG).show()
+                return@setOnClickListener
+            }
+
+            var client = clientQuery.getValue<Client>()
+
+            var clientIntent = Intent(this, CrearOrdenActivity::class.java)
+
+            clientIntent.putExtra(CrearOrdenActivity.CLIENT_KEY, client?.client.toString())
+            clientIntent.putExtra(CrearOrdenActivity.ADDRESS_KEY, client?.address.toString())
+            clientIntent.putExtra(CrearOrdenActivity.CELLPHONE_KEY, client?.cellphone.toString())
+            clientIntent.putExtra(CrearOrdenActivity.EMAIL_KEY, client?.email.toString())
+
+            startActivity(clientIntent)
+            return@setOnClickListener
         }
     }
 

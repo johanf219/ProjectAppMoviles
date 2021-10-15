@@ -55,6 +55,10 @@ class SigninActivity : AppCompatActivity() {
 
             Toast.makeText(this, "sign in successful", Toast.LENGTH_LONG).show()
 
+            val client = Client(username, "florezjohan2197@gmail.com", "+573117282480", "cra 27D # 78-46")
+            var clientQuery = db.child("client").child(username)
+            clientQuery.setValue(client)
+
             cleaner()
 
             var intent = Intent(this, MenuActivity::class.java)

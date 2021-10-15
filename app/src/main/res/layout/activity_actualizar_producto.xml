@@ -27,7 +27,7 @@
         android:layout_height="25dp"
         android:layout_marginTop="12dp"
         android:drawSelectorOnTop="true"
-        android:entries="@array/spinnerUnits"
+        android:entries="@array/spinner_units"
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
